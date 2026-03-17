@@ -12,8 +12,8 @@ public:
                 i++;
                 j++;
             }
-            else j++;
+              else j++;
         }
-        return count;
+          return count;
     }
 };
