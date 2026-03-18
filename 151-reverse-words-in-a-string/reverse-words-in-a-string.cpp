@@ -9,6 +9,7 @@ public:
         while(i<n){
             while(i<n && s[i]==' ')
                 i++;
+            
                if ( i==n) break;
                 while(i<n && s[i]!=' '){
                     s[right++]=s[i++];
