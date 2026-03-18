@@ -9,7 +9,7 @@ public:
         while(j < n) {
             sum = sum + arr[j];
 
-            if(j - i + 1 == k) {
+            if(j - i + 1 == k) { // to find window size and match it with k
                 int avg = sum / k;
                 if(avg >= threshold) {
                     count++;
