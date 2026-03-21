@@ -1,15 +1,15 @@
 class Solution {
 public:
 bool check(int speed,vector<int>& piles,int h){
-    int count = 0;
+    long long count = 0;
     int n =piles.size();
     for(int i =0;i<n;i++){
-        if(count>h) return false;
+        //if(count>h) return false;
         if(speed>=piles[i]) count++;
-        else if(piles[i]%speed==0) count += piles[i]/speed;
-        else count += piles[i]/speed +1; // v.imp
+        else if(piles[i]%speed==0) count +=(long long) piles[i]/speed;
+        else count += (long long) piles[i]/speed +1; // v.imp
     }
-    if(count>h) return false;
+    if(count>(long long) h) return false;
     else return true;
 }
     int minEatingSpeed(vector<int>& piles, int h) {
