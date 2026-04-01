@@ -5,7 +5,7 @@ public:
         int i =0;
         while(i<n){
             int correctIdx = nums[i]-1;
-            if(nums[correctIdx]== nums[i] || correctIdx==i) i++;
+            if(nums[correctIdx]== nums[i]) i++;
             else swap(nums[i],nums[correctIdx]);
         }
         vector<int> ans;
