@@ -4,7 +4,6 @@ public :
         int n = nums.size();
         vector<int> pre(n);
         vector<int> suf(n);
-        vector<int> ans(n);
         int p = nums[0];;
         pre[0]=1;
         for(int i =1; i<n;i++){
@@ -18,8 +17,8 @@ public :
             p *= nums[i];
         }
         for(int i=0;i<n;i++){
-            ans[i]= pre[i]*suf[i];
+            pre[i]= pre[i]*suf[i];
         }
-        return ans;
+        return pre;
         }   
 };
