@@ -6,7 +6,6 @@ public:
             sum += nums[i];
             nums[i]=sum;
         }
-        return nums;
-        
+              return nums;   
     }
 };
