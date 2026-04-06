@@ -18,7 +18,6 @@ public:
             j++;
         }
         if(minLen==INT_MAX) return 0;
-         return minLen;
-        
+         return minLen;     
     }
 };
