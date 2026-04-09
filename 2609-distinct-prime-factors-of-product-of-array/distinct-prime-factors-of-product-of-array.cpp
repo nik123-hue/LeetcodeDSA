@@ -15,8 +15,8 @@ void fillsieve(vector<bool>& sieve){
             mx = max(mx,nums[i]);
         }
         vector<bool> sieve(mx+1,1);  // 1 means prime
-        if(n>0) sieve[0] = 0;
-        if(n>1) sieve[1] = 0;
+        if(mx+1>0) sieve[0] = 0;
+        if(mx+1>1) sieve[1] = 0;
         fillsieve(sieve);
         vector<int> primes;
         for(int i=2;i<=mx;i++){
