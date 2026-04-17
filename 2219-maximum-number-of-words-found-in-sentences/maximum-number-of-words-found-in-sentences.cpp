@@ -2,7 +2,7 @@ class Solution {
 public:
     int mostWordsFound(vector<string>& sentences) {
         int maxWords = 0;
-        for(const string s : sentences){
+        for( string s : sentences){
             int count = 1;
             for(char c : s){
                 if(c ==' ') count++;
