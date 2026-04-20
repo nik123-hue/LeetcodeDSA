@@ -15,13 +15,13 @@ public:
          Node* temp = head;
          while(temp){
             Node* a = temp->next;
-            if(temp->child!=NULL){
+            if(temp->child){
                   Node* c = temp->child;
                   temp->child = NULL;
                   c = flatten(c);
                   temp->next = c;
                   c->prev = temp;
-                  while(c->next!=NULL){
+                  while(c->next){
                     c = c->next;
                   }
                   c->next = a;
