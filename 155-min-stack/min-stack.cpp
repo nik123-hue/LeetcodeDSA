@@ -20,7 +20,8 @@ long long min;
     }
     
     void pop() {  // 0(1)
-       if(st.top()<min){
+       if(st.top()<min){ // A fake value is present
+          // before popping make sure to retrieve the old min
         long long oldMin = 2*min - st.top();
         min = oldMin;
        }
@@ -29,13 +30,13 @@ long long min;
     }
     
     int top() {  // 0(1)
-       if(st.top()<min) return min;
-       else return st.top();
+       if(st.top()<min) return(int)min;
+       else return(int) (st.top());
         
     }
     
     int getMin() {  // 0(1)
-     return min;
+     return (int)min;
     }
 };
 
