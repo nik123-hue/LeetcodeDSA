@@ -14,13 +14,11 @@ void combination(vector<vector<int>>& ans, vector<int> v,vector<int>& candidates
     combination(ans,v,candidates, target-candidates[i], i); // not i+1 because we can reuse the same element
     v.pop_back();
     }
-
 }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         vector<vector<int>> ans;
         vector<int> v;
         combination(ans,v,candidates,target,0);
-        return ans;
-        
+        return ans;    
     }
 };
