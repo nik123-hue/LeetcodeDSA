@@ -6,13 +6,12 @@ public:
         int pos = 0;
         int neg = 1;
         for(int i=0;i<n;i++){
-            int x = nums[i];
-            if(x>0){
-               ans[pos] = x;
+            if(nums[i]>0){
+               ans[pos] = nums[i];
                 pos += 2;
             }
             else {
-                ans[neg] = x;
+                ans[neg] = nums[i];
                 neg += 2;
             }
         }
