@@ -11,7 +11,7 @@ public:
                ans[pos] = x;
                 pos += 2;
             }
-            else{
+            else {
                 ans[neg] = x;
                 neg += 2;
             }
