@@ -9,8 +9,8 @@ public:
                 return mid;
             }
             // left part is rotated
-            if(nums[first]<=nums[mid]){
-                if(nums[first]<=target && target<=nums[mid]){
+            if(nums[first] <= nums[mid]){
+                if(nums[first] <= target && target < nums[mid]){
                     last = mid-1;
                 }
                 else
@@ -18,7 +18,7 @@ public:
             }
             // right part is rotated
             else{
-                 if(nums[mid]<target && target <= nums[last]){
+                 if(nums[mid] < target && target <= nums[last]){
                     first = mid+1;
                  }
                  else 
