@@ -16,12 +16,12 @@ public:
     }
     int splitArray(vector<int>& nums, int k) {
         int low = *max_element(nums.begin(), nums.end());
-        long long high = 0;
+        int high = 0;
         for (int num : nums)
             high += num;
         long long ans = high;
         while (low <= high) {
-            long long mid = low + (high - low) / 2;
+            int mid = low + (high - low) / 2;
             if (possible(nums, k, mid)) {
                 ans = mid;
                 high = mid - 1;
