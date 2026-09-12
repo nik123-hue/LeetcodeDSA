@@ -2,7 +2,7 @@ class Solution {
 public:
     int countSubarrays(vector<int>& nums, long long maxSum) {
         int subarrays = 1;
-        long long sum = 0;
+        int sum = 0;
         for (int i = 0; i < nums.size(); i++) {
             if (sum + nums[i] <= maxSum) {
                 sum += nums[i];
