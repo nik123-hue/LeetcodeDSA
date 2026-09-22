@@ -6,8 +6,9 @@ public:
         int row = 0;
         int col = m-1;
         while(row<n && col >=0){
-            if(matrix[row][col]==target) return true;
-            else if(matrix[row][col] < target) row++;
+            int curr = matrix[row][col];
+            if(curr==target) return true;
+            else if(curr < target) row++;
             else col--;
         }
         return false;
