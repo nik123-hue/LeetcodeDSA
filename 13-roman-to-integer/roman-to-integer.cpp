@@ -16,7 +16,7 @@ int value(char ch){
         int ans = 0;
         for(int i=0;i<n;i++){
           int current = value(s[i]);
-          if(i+1<n && current < value(s[i+1])){
+          if(current < value(s[i+1])){
             ans -= current;
           }
           else{
