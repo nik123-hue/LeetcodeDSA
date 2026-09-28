@@ -1,6 +1,6 @@
 class Solution {
 public:
-int expand(string s,int l, int r){
+int expand(string &s,int l, int r){
     while(l>=0 && r < s.length() && s[l]==s[r]){
         l--;
         r++;
