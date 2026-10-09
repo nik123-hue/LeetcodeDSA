@@ -6,12 +6,12 @@ public:
           ListNode* even = head->next;
            ListNode* evenHead = head->next;
            while(even != NULL && even->next != NULL){
-              odd->next = even->next;
-              odd = odd->next;
-              even->next = odd->next;
+            odd->next = even->next;
+             odd = odd->next;
+             even->next = odd->next;
               even = even->next;
            }
-                odd->next =  evenHead;
+             odd->next =  evenHead;
                 return head;
     }
 };
