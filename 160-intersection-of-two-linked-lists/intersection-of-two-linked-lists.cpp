@@ -8,10 +8,10 @@ public:
         tempA = tempA->next;
         tempB = tempB->next;
        
-       if(tempA==tempB) return tempA;
+       if(tempA==tempB) return tempB;
        if(tempA==NULL) tempA = headB;
        if(tempB==NULL) tempB = headA;
        }
-       return tempB;
+       return tempA;
     }
 };
