@@ -12,6 +12,6 @@ public:
        if(tempA==NULL) tempA = headB;
        if(tempB==NULL) tempB = headA;
        }
-       return tempA;
+       return tempB;
     }
 };
