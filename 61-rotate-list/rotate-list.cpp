@@ -20,7 +20,5 @@ public:
            head = temp->next;
            temp->next = NULL;
            return head;
-
-        
     }
 };
