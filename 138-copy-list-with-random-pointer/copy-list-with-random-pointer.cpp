@@ -1,6 +1,7 @@
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
+        if(head==NULL) return NULL;
         Node* temp = head;
         // inserting copynode in between
         while(temp != NULL){
