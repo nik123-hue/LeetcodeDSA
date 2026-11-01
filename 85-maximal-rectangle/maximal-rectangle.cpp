@@ -1,5 +1,6 @@
 class Solution {
 public:
+// finding largest rectangle
  int largestRectangleArea(vector<int>& arr) {
         int n = arr.size();
         int ans = 0;
